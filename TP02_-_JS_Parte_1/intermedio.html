@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/intermedio.css">
+    <title>Intermedio | UNICEN Web 1: TP 2 Javascript Parte 1</title>
+</head>
+<body>
+    <header>
+        <h1>Hola <span id="mostrarNombreEnTitulo">Mundo</span></h1>
+        <nav>
+            <a href="/">« Volver</a>
+            &nbsp;|&nbsp;
+            <a href="/basico.html">Básico</a>
+            &nbsp;|&nbsp;
+            <a href="#" class="no-style">Intermedio</a>
+            &nbsp;|&nbsp;
+            <a href="/avanzado.html">Avanzado</a>
+        </nav>
+    </header>
+    <main>
+        <form method="POST" action="" id="formParaMostrarNombreEnTitulo">
+            <h3>Ingrese sus datos para ser mostrados en el título</h3>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="input-nombre">
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="input-apellido">
+            <input type="submit" value="Enviar">
+        </form>
+
+        <h2 class="text-center">Lista de Tareas</h2>
+
+        <div class="ingresar-nueva-tarea">
+            <h3 class="text-center m-0">Ingresar nueva tarea</h3>
+            <form method="POST" action="" id="formAgregarTarea">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="tarea-nombre">
+                </div>
+                <div>
+                    <label for="detalle">Detalle</label>
+                    <input type="text" name="detalle" id="tarea-detalle">
+                </div>
+                <div>
+                    <label for="estado">Estado</label>
+                    <select name="estado" id="tarea-estado">
+                        <option value="incompleta" selected>❕ Incompleta</option>
+                        <option value="completa">✅ Completa</option>
+                    </select>
+                </div>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+        <table id="tabla-lista-tareas">
+            <thead>
+                <tr>
+                    <th>ID Tarea</th>
+                    <th>Nombre</th>
+                    <th>Detalle</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>asdasda</td>
+                    <td>completar asdasda</td>
+                    <td class="columna-tarea-completa">✅ Completa</td>
+                    <td class="columna-acciones">
+                        <button class="btn-incompletar" title="Marcar Incompleta">❕</button>
+                        <button class="btn-editar" title="Editar">✏</button>
+                        <button class="btn-eliminar" title="Eliminar">❌</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>esdesde</td>
+                    <td>completar esdesde</td>
+                    <td class="columna-tarea-incompleta">❕ Incompleta</td>
+                    <td class="columna-acciones">
+                        <button class="btn-incompletar" title="Marcar Completa">✅</button>
+                        <button class="btn-editar" title="Editar">✏</button>
+                        <button class="btn-eliminar" title="Eliminar">❌</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>isdisdi</td>
+                    <td>completar isdisdi</td>
+                    <td class="columna-tarea-incompleta">❕ Incompleta</td>
+                    <td class="columna-acciones">
+                        <button class="btn-incompletar" title="Marcar Completa">✅</button>
+                        <button class="btn-editar" title="Editar">✏</button>
+                        <button class="btn-eliminar" title="Eliminar">❌</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!--
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore commodi minus, eius error dolorum architecto. Autem voluptas excepturi expedita ducimus quae quos, laboriosam esse facilis natus deleniti error amet? Quisquam labore eos ipsam consequatur ipsa recusandae saepe nostrum reiciendis ut sunt, autem eaque quos cum, sed officiis voluptatibus, illo possimus repellendus. Necessitatibus illum dicta mollitia ullam modi ipsum nesciunt repellendus fugit veritatis ipsam repudiandae dolorum corporis vel enim illo alias voluptatem quaerat quisquam, optio laboriosam quos nostrum placeat minus. Deleniti eius maxime ducimus? Autem minima dolorum, consectetur dignissimos similique quos saepe ratione, minus labore magnam, atque corporis voluptate. In sed architecto consequuntur nobis, reprehenderit praesentium! Nemo delectus iure numquam quidem at aperiam quibusdam, tenetur molestiae nam, fugiat voluptas totam placeat deleniti illum ullam velit fugit voluptatem impedit sunt molestias. Eaque perferendis earum cumque recusandae non et ad voluptatum accusamus sequi rerum saepe sed dolores ut odit facilis a labore, facere iusto? Unde accusantium totam eveniet nesciunt earum provident alias quidem laudantium odio. Est necessitatibus ullam ea quasi dicta, quia fuga nisi, labore nostrum optio iste quos, tenetur exercitationem omnis aliquid blanditiis ipsam. Provident iste unde libero dolores molestias nam consequatur tempora ex explicabo corrupti, dicta nulla expedita ab temporibus itaque!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore commodi minus, eius error dolorum architecto. Autem voluptas excepturi expedita ducimus quae quos, laboriosam esse facilis natus deleniti error amet? Quisquam labore eos ipsam consequatur ipsa recusandae saepe nostrum reiciendis ut sunt, autem eaque quos cum, sed officiis voluptatibus, illo possimus repellendus. Necessitatibus illum dicta mollitia ullam modi ipsum nesciunt repellendus fugit veritatis ipsam repudiandae dolorum corporis vel enim illo alias voluptatem quaerat quisquam, optio laboriosam quos nostrum placeat minus. Deleniti eius maxime ducimus? Autem minima dolorum, consectetur dignissimos similique quos saepe ratione, minus labore magnam, atque corporis voluptate. In sed architecto consequuntur nobis, reprehenderit praesentium! Nemo delectus iure numquam quidem at aperiam quibusdam, tenetur molestiae nam, fugiat voluptas totam placeat deleniti illum ullam velit fugit voluptatem impedit sunt molestias. Eaque perferendis earum cumque recusandae non et ad voluptatum accusamus sequi rerum saepe sed dolores ut odit facilis a labore, facere iusto? Unde accusantium totam eveniet nesciunt earum provident alias quidem laudantium odio. Est necessitatibus ullam ea quasi dicta, quia fuga nisi, labore nostrum optio iste quos, tenetur exercitationem omnis aliquid blanditiis ipsam. Provident iste unde libero dolores molestias nam consequatur tempora ex explicabo corrupti, dicta nulla expedita ab temporibus itaque!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore commodi minus, eius error dolorum architecto. Autem voluptas excepturi expedita ducimus quae quos, laboriosam esse facilis natus deleniti error amet? Quisquam labore eos ipsam consequatur ipsa recusandae saepe nostrum reiciendis ut sunt, autem eaque quos cum, sed officiis voluptatibus, illo possimus repellendus. Necessitatibus illum dicta mollitia ullam modi ipsum nesciunt repellendus fugit veritatis ipsam repudiandae dolorum corporis vel enim illo alias voluptatem quaerat quisquam, optio laboriosam quos nostrum placeat minus. Deleniti eius maxime ducimus? Autem minima dolorum, consectetur dignissimos similique quos saepe ratione, minus labore magnam, atque corporis voluptate. In sed architecto consequuntur nobis, reprehenderit praesentium! Nemo delectus iure numquam quidem at aperiam quibusdam, tenetur molestiae nam, fugiat voluptas totam placeat deleniti illum ullam velit fugit voluptatem impedit sunt molestias. Eaque perferendis earum cumque recusandae non et ad voluptatum accusamus sequi rerum saepe sed dolores ut odit facilis a labore, facere iusto? Unde accusantium totam eveniet nesciunt earum provident alias quidem laudantium odio. Est necessitatibus ullam ea quasi dicta, quia fuga nisi, labore nostrum optio iste quos, tenetur exercitationem omnis aliquid blanditiis ipsam. Provident iste unde libero dolores molestias nam consequatur tempora ex explicabo corrupti, dicta nulla expedita ab temporibus itaque!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore commodi minus, eius error dolorum architecto. Autem voluptas excepturi expedita ducimus quae quos, laboriosam esse facilis natus deleniti error amet? Quisquam labore eos ipsam consequatur ipsa recusandae saepe nostrum reiciendis ut sunt, autem eaque quos cum, sed officiis voluptatibus, illo possimus repellendus. Necessitatibus illum dicta mollitia ullam modi ipsum nesciunt repellendus fugit veritatis ipsam repudiandae dolorum corporis vel enim illo alias voluptatem quaerat quisquam, optio laboriosam quos nostrum placeat minus. Deleniti eius maxime ducimus? Autem minima dolorum, consectetur dignissimos similique quos saepe ratione, minus labore magnam, atque corporis voluptate. In sed architecto consequuntur nobis, reprehenderit praesentium! Nemo delectus iure numquam quidem at aperiam quibusdam, tenetur molestiae nam, fugiat voluptas totam placeat deleniti illum ullam velit fugit voluptatem impedit sunt molestias. Eaque perferendis earum cumque recusandae non et ad voluptatum accusamus sequi rerum saepe sed dolores ut odit facilis a labore, facere iusto? Unde accusantium totam eveniet nesciunt earum provident alias quidem laudantium odio. Est necessitatibus ullam ea quasi dicta, quia fuga nisi, labore nostrum optio iste quos, tenetur exercitationem omnis aliquid blanditiis ipsam. Provident iste unde libero dolores molestias nam consequatur tempora ex explicabo corrupti, dicta nulla expedita ab temporibus itaque!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore commodi minus, eius error dolorum architecto. Autem voluptas excepturi expedita ducimus quae quos, laboriosam esse facilis natus deleniti error amet? Quisquam labore eos ipsam consequatur ipsa recusandae saepe nostrum reiciendis ut sunt, autem eaque quos cum, sed officiis voluptatibus, illo possimus repellendus. Necessitatibus illum dicta mollitia ullam modi ipsum nesciunt repellendus fugit veritatis ipsam repudiandae dolorum corporis vel enim illo alias voluptatem quaerat quisquam, optio laboriosam quos nostrum placeat minus. Deleniti eius maxime ducimus? Autem minima dolorum, consectetur dignissimos similique quos saepe ratione, minus labore magnam, atque corporis voluptate. In sed architecto consequuntur nobis, reprehenderit praesentium! Nemo delectus iure numquam quidem at aperiam quibusdam, tenetur molestiae nam, fugiat voluptas totam placeat deleniti illum ullam velit fugit voluptatem impedit sunt molestias. Eaque perferendis earum cumque recusandae non et ad voluptatum accusamus sequi rerum saepe sed dolores ut odit facilis a labore, facere iusto? Unde accusantium totam eveniet nesciunt earum provident alias quidem laudantium odio. Est necessitatibus ullam ea quasi dicta, quia fuga nisi, labore nostrum optio iste quos, tenetur exercitationem omnis aliquid blanditiis ipsam. Provident iste unde libero dolores molestias nam consequatur tempora ex explicabo corrupti, dicta nulla expedita ab temporibus itaque!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore commodi minus, eius error dolorum architecto. Autem voluptas excepturi expedita ducimus quae quos, laboriosam esse facilis natus deleniti error amet? Quisquam labore eos ipsam consequatur ipsa recusandae saepe nostrum reiciendis ut sunt, autem eaque quos cum, sed officiis voluptatibus, illo possimus repellendus. Necessitatibus illum dicta mollitia ullam modi ipsum nesciunt repellendus fugit veritatis ipsam repudiandae dolorum corporis vel enim illo alias voluptatem quaerat quisquam, optio laboriosam quos nostrum placeat minus. Deleniti eius maxime ducimus? Autem minima dolorum, consectetur dignissimos similique quos saepe ratione, minus labore magnam, atque corporis voluptate. In sed architecto consequuntur nobis, reprehenderit praesentium! Nemo delectus iure numquam quidem at aperiam quibusdam, tenetur molestiae nam, fugiat voluptas totam placeat deleniti illum ullam velit fugit voluptatem impedit sunt molestias. Eaque perferendis earum cumque recusandae non et ad voluptatum accusamus sequi rerum saepe sed dolores ut odit facilis a labore, facere iusto? Unde accusantium totam eveniet nesciunt earum provident alias quidem laudantium odio. Est necessitatibus ullam ea quasi dicta, quia fuga nisi, labore nostrum optio iste quos, tenetur exercitationem omnis aliquid blanditiis ipsam. Provident iste unde libero dolores molestias nam consequatur tempora ex explicabo corrupti, dicta nulla expedita ab temporibus itaque!</p>
+        -->
+    </main>
+    <footer>
+        <p class="text-center">© FHFraHz 2026</p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/intermedio.js"></script>
+</body>
+</html>

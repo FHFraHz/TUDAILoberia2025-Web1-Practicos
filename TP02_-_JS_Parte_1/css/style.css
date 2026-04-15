@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Liberation Sans';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/liberation_sans/LiberationSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'Liberation Sans';
+    font-style: italic;
+    font-weight: normal;
+    src: url('../fonts/liberation_sans/LiberationSans-Italic.ttf');
+}
+@font-face {
+    font-family: 'Liberation Sans';
+    font-style: normal;
+    font-weight: bold;
+    src: url('../fonts/liberation_sans/LiberationSans-Bold.ttf');
+}
+@font-face {
+    font-family: 'Liberation Sans';
+    font-style: italic;
+    font-style: bold;
+    src: url('../fonts/liberation_sans/LiberationSans-BoldItalic.ttf');
+}
+
+body, html {
+    font-family: 'Liberation Sans', 'Tahoma', 'Verdana', sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    height: 100svh;
+    margin: 0;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+
+main {
+    overflow: scroll;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 0.5em;
+}
+
+form {
+    padding: 0.5em 0;
+    margin: 0;
+}
+
+.no-style {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+input, button, select {
+    padding: 0.25ch;
+}
+
+/*
+button {
+    border-radius: 4px;
+    padding: 0.5em;
+    cursor: pointer;
+    border: 1pt #aaa outset;
+}
+button:active {
+    border: 1pt #ccc inset;
+}
+*/

@@ -36,6 +36,7 @@ tr > * {
     display: grid;
     align-content: center;
 }
+tr > *.columna-tarea-completa, tr > *.columna-tarea-incompleta { font-size: 14px; }
 tr > *.columna-tarea-completa { background: lightgreen; }
 tr > *.columna-tarea-incompleta { background: lightyellow; }
 

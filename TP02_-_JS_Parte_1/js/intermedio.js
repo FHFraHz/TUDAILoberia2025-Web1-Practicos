@@ -308,3 +308,10 @@ function agregarEventListenersABotones() {
         });
     });
 }
+
+document.getElementById('btn-cambiarEstiloDiv').addEventListener('click', function() {
+    // Método 1: usando etiqueta style (permite colores aleatorios con hsl(tinte0-255, sat%, lum%))
+    // document.getElementById('divACambiarEstilo').style = 'background: hsl('+Math.floor(Math.random()*255)+', 80%, 37.5%); border: 3px solid red;';
+    // Método 2: cambiando clases (sólo permite un cambio de color)
+    document.getElementById('divACambiarEstilo').classList.add('div-estilo-cambiado');
+});

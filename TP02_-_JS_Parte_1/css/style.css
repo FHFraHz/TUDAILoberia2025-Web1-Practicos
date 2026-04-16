@@ -33,13 +33,27 @@ body {
     height: 100vh;
     height: 100svh;
     margin: 0;
+    padding: 0em;
+    box-sizing: border-box;
+}
+
+header h1, header nav {
+    margin: 0;
+    padding: 0.25em 0;
+}
+
+header, main, footer {
     padding: 0.5em;
     box-sizing: border-box;
 }
 
 main {
-    overflow: scroll;
-    box-sizing: border-box;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+footer {
+    background: whitesmoke;
 }
 
 button {
@@ -51,6 +65,10 @@ form {
     margin: 0;
 }
 
+label {
+    font-size: 14px;
+}
+
 .no-style {
     color: inherit;
     font-weight: normal;
@@ -59,6 +77,11 @@ form {
 
 input, button, select {
     padding: 0.25ch;
+}
+
+header {
+    padding-bottom: 0.5em;
+    background: linear-gradient(to bottom, whitesmoke 0%, whitesmoke 95%, #0007 100%)
 }
 
 /*

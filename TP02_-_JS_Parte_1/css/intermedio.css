@@ -40,12 +40,13 @@ tr > *.columna-tarea-completa, tr > *.columna-tarea-incompleta { font-size: 14px
 tr > *.columna-tarea-completa { background: lightgreen; }
 tr > *.columna-tarea-incompleta { background: lightyellow; }
 
-tr > *.columna-acciones {
+tr > *.columna-acciones, tr > *.columna-acciones-editar {
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     gap: 1em;
 }
+tr > *.columna-acciones { grid-template-columns: 1fr 1fr 1fr; }
+tr > *.columna-acciones-editar { grid-template-columns: 1fr 1fr; }
 thead > tr {
     background: #373740;
     color: #eee;

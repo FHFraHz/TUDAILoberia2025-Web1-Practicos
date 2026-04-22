@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/avanzado.css">
     <title>Avanzado | UNICEN Web 1: TP 2 Javascript Parte 1</title>
 </head>
 <body>
     <header>
         <h1>Hola Mundo</h1>
-        <nav id="lower-nav">
+        <nav>
             <a href="/">« Volver</a>
             &nbsp;|&nbsp;
             <a href="/basico.html">Básico</a>
@@ -20,10 +21,42 @@
             <a href="#" class="no-style">Avanzado</a>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <div class="text-center">
+            <button type="button" id="botonToggleDivConInformacion">Mostrar/Ocultar Información</button>
+        </div>
+        <div id="divConInformacion">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates autem voluptas quae consectetur atque fugiat animi minima ad, quibusdam itaque?</p>
+        </div>
+        <div id="calculadora-contenedor">
+            <h2 class="text-center">Calculadora</h2>
+            <p class="text-center">
+                <label class="clickable">Acumular resultados
+                    <input type="checkbox" name="calculadora-acumular" id="checkbox-calculadora-acumular">
+                </label>
+            </p>
+            <input type="number" min="-65536" max="65535" value="0" id="calculadora-operando1"/>
+            <select id="calculadora-operador">
+                <option selected value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <input type="number" min="-65536" max="65535" value="0" id="calculadora-operando2"/>
+            <button type="button" id="calculadora-calcular">=</button>
+            <span id="calculadora-resultado">0</span>
+        </div>
+        <h4>Apartados:</h4>
+        <ul>
+            <li><a href="avanzado/click-pantalla.html">Dibujar con clicks en la pantalla</a></li>
+            <li><a href="avanzado/tarjeta-personal.html">Diseñar tarjeta personal</a></li>
+            <li><a href="avanzado/ruleta.html">Ruleta</a></li>
+        </ul>
+    </main>
     <footer>
         <p class="text-center">© FHFraHz 2026</p>
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/avanzado.js"></script>
 </body>
 </html>

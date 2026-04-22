@@ -85,6 +85,10 @@ header {
     
 }
 
+.clickable {
+    cursor: pointer;
+}
+
 /*
 button {
     border-radius: 4px;

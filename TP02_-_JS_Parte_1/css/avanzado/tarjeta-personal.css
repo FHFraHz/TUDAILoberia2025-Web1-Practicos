@@ -1,0 +1,102 @@
+form#form-tarjeta-personal {
+    text-align: center;
+}
+
+form#form-tarjeta-personal .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* justify-content: stretch; */
+}
+form#form-tarjeta-personal .form-grid div {
+    display: grid;
+    justify-content: center;
+}
+
+form#form-tarjeta-personal > input {
+    margin: 1em 0;
+    text-align: center;
+}
+
+#tarjeta-personal, #tarjeta-grid {
+    padding: 1em;
+    border-radius: 12px;
+}
+
+#tarjeta-personal {
+    background: #def;
+}
+
+#tarjeta-grid {
+    display: grid;
+    grid-template-areas:
+    "nombre apellido profesion avatar"
+    "email telefono direccion avatar";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    background: whitesmoke;
+    
+    #tarjeta-avatar {
+        grid-area: avatar;
+        width: min(75%, 125px);
+        height: auto;
+        justify-self: center;
+        align-self: center;
+        background: lightgreen;
+        border-radius: 50%;
+        border: 8px inset #0f07;
+    }
+    #div-nombre {
+        grid-area: nombre;
+    }
+    #div-apellido {
+        grid-area: apellido;
+    }
+    #div-profesion {
+        grid-area: profesion;
+    }
+    #div-email {
+        grid-area: email;
+    }
+    #div-telefono {
+        grid-area: telefono;
+    }
+    #div-direccion {
+        grid-area: direccion;
+    }
+}
+
+#tarjeta-grid > * > p {
+    font-weight: 400;
+    text-decoration: underline;
+}
+#tarjeta-grid > * > h3 {
+    font-weight: 600;
+}
+
+.color-dato-no-aplicable {
+    color: firebrick;
+}
+
+
+@media screen and (max-width: 600px) {
+    form#form-tarjeta-personal .form-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        /* justify-content: stretch; */
+    }
+    #tarjeta-grid {
+        grid-template-areas:
+        "avatar avatar"
+        "nombre apellido"
+        "profesion email"
+        "telefono direccion"
+        ;
+        grid-template-columns: 1fr 1fr;
+
+        * {
+            text-align: center;
+        }
+
+    }
+}

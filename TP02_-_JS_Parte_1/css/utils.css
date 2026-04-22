@@ -6,3 +6,15 @@
 .text-justify { text-align: justify; }
 
 .m-0 { margin: 0; }
+
+.no-select { user-select: none; }
+
+.fw-light { font-weight: light; }
+.fw-normal { font-weight: normal; }
+.fw-bold { font-weight: bold; }
+.fw-lighter { font-weight: lighter; }
+.fw-bolder { font-weight: bolder; }
+
+.fst-normal { font-style: normal; }
+.fst-italic { font-style: italic; }
+.fst-oblique { font-style: oblique; }

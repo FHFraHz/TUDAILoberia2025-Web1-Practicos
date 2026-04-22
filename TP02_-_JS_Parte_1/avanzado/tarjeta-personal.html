@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/utils.css">
+    <link rel="stylesheet" href="../css/avanzado/tarjeta-personal.css">
+    <title>Avanzado: Tarjeta Personal | UNICEN Web 1: TP 2 Javascript Parte 1</title>
+</head>
+<body>
+    <header>
+        <a href="../avanzado.html" class="text-center"><h4><< Volver</h4></a>
+    </header>
+    <main>
+        <form id="form-tarjeta-personal">
+            <div class="form-grid">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" required aria-required="true">
+                </div>
+                <div>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" required aria-required="true">
+                </div>
+                <div>
+                    <label for="profesion">Profesión</label>
+                    <input type="text" name="profesion">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email">
+                </div>
+                <div>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" name="telefono">
+                </div>
+                <div>
+                    <label for="direccion">Dirección</label>
+                    <input type="text" name="direccion">
+                </div>
+            </div>
+            <input type="submit" value="Crear tarjeta">
+        </form>
+        <div id="tarjeta-personal">
+            <h1 class="text-center">UNICEN Lobería Web 1</h1>
+            <h2 class="text-center">Tarjeta Personal</h2>
+            <p id="mensaje-introduzca-datos" class="text-center fst-italic">Por favor introduzca sus datos....</p>
+            <div id="tarjeta-grid">
+                <img id="tarjeta-avatar" src="../img/bust-in-silhouette-svgrepo-com.svg" alt="">
+                <div id="div-nombre">
+                    <p>Nombre</p>
+                    <h3 id="tarjeta-nombre">asdasda</h3>
+                </div>
+                <div id="div-apellido">
+                    <p>Apellido</p>
+                    <h3 id="tarjeta-apellido">esdesde</h3>
+                </div>
+                <div id="div-profesion">
+                    <p>Profesión</p>
+                    <h3 id="tarjeta-profesion">asvaldralfa</h3>
+                </div>
+                <div id="div-email">
+                    <p>Email</p>
+                    <h4 id="tarjeta-email">asdasda@mail.com</h4>
+                </div>
+                <div id="div-telefono">
+                    <p>Teléfono</p>
+                    <h4 id="tarjeta-telefono">+54-9-123-456-7890</h4>
+                </div>
+                <div id="div-direccion">
+                    <p>Dirección</p>
+                    <h4 id="tarjeta-direccion">Calle 12 nº 3456</h4>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="text-center">© FHFraHz 2026</p>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script src="../js/avanzado/tarjeta-personal.js"></script>
+</body>
+</html>

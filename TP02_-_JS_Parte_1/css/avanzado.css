@@ -1,0 +1,16 @@
+.invisible {
+    display: none;
+}
+#calculadora-contenedor *:not(h2,p) {
+    font-size: 112%;
+}
+
+#calculadora-contenedor {
+    justify-self: center;
+    background: #f7f0d0;
+    padding: 1em;
+    box-sizing: border-box;
+    min-width: min(480px, 100%);
+    width: auto;
+    border-radius: 0.5em;
+}

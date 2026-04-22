@@ -1,9 +1,12 @@
 'use strict';
 let idTarea = 0;
 let tareas = [
+    
+    // tareas de relleno para pruebas
     crearTarea('asdasa', 'completar asdasa', 'completa'),
     crearTarea('esdesde', 'completar esdesde',),
     crearTarea('isdisdi', 'completar isdisdi',)
+    
 ];
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -310,8 +313,9 @@ function agregarEventListenersABotones() {
 }
 
 document.getElementById('btn-cambiarEstiloDiv').addEventListener('click', function() {
-    // Método 1: usando etiqueta style (permite colores aleatorios con hsl(tinte0-255, sat%, lum%))
-    // document.getElementById('divACambiarEstilo').style = 'background: hsl('+Math.floor(Math.random()*255)+', 80%, 37.5%); border: 3px solid red;';
-    // Método 2: cambiando clases (sólo permite un cambio de color)
-    document.getElementById('divACambiarEstilo').classList.add('div-estilo-cambiado');
+    // Método 1: usando hsl
+    document.getElementById('divACambiarEstilo').style.background = 'hsl('+Math.floor(Math.random()*255)+', 80%, 37.5%)';
+    // Método 2: usando un color estático
+    // document.getElementById('divACambiarEstilo').style.background = 'cyan';
+    document.getElementById('divACambiarEstilo').style.border = '3px solid red';
 });

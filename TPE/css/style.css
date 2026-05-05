@@ -107,6 +107,22 @@ main {
         "contenido"
         "anuncio2";
     grid-template-rows: auto 1fr auto;
+    background-image: url('../img/fondos/fondopag2.jpg');
+}
+
+main > * {
+    background: #fff7;
+}
+
+#contenido section article {
+    display: grid;
+}
+
+#contenido section article img {
+    justify-self: center;
+    max-width: 480px;
+    max-height: 240px;
+    object-fit: contain;
 }
 
 section#anuncio1 { grid-area: anuncio1; }
@@ -116,7 +132,8 @@ section#contenido { grid-area: contenido; }
 footer {
     height: 3rem;
     text-align: center;
-    background: gray;
+    align-content: center;
+    background: linear-gradient(to bottom, #C92A, #B72F);
 }
 
 article.articulo-instrumento {

@@ -3,8 +3,8 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById('boton-hamburguesa').addEventListener('click', function() {
-        document.getElementById('navbar-ul-menu').classList.toggle('abierto');
-        document.getElementById('overlay-oscuro').classList.toggle('mostrar');
+        document.getElementById('navbar-ul-menu').classList.toggle('mobile-abierto');
+        document.getElementById('fondo-nav-overlay').classList.toggle('mostrar');
     });
 
 });

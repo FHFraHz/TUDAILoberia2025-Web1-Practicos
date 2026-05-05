@@ -6,7 +6,7 @@
 
 body {
     display: grid;
-    grid-template-rows: auto auto 1fr auto;
+    grid-template-rows: auto 1fr auto;
     /* grid-template-columns: 2fr 1fr; */
     font-family: 'Liberation Sans', 'Segoe UI', 'Tahoma', 'Verdana', sans-serif;
 }
@@ -76,9 +76,11 @@ nav ul#navbar-ul-menu {
     padding: 0;
     margin: 0;
 }
-nav ul#navbar-ul-menu.abierto {
+nav ul#navbar-ul-menu.mobile-abierto {
     display: grid;
     top: 100%;
+    /* position: sticky; */
+    /* position: fixed; */
 }
 nav ul#navbar-ul-menu li {
     display: flex;
@@ -127,11 +129,11 @@ article.articulo-instrumento img {
     height: auto;
 }
 
-div#overlay-oscuro {
+div#fondo-nav-overlay {
     display: none;
 }
 
-div#overlay-oscuro.mostrar {
+div#fondo-nav-overlay.mostrar {
     display: block;
     position: fixed;
     top: 0;
@@ -141,4 +143,90 @@ div#overlay-oscuro.mostrar {
     overflow: hidden;
     background: #1117;
     z-index: 1;
+}
+
+.anuncio {
+    height: 4rem;
+    position: relative;
+    /* isolation: isolate; */
+}
+
+.anuncio a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*
+.anuncio a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, #fff0, #fff7);
+    z-index: 1;
+}
+*/
+.anuncio a .overlay-anuncio {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1ch;
+    font-size: 12px;
+    font-weight: bold;
+    color: #eee;
+    background: #17a;
+    z-index: 2;
+}
+
+@media (min-width: 960px) {
+    main {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+        "contenido anuncio1"
+        "contenido anuncio2";
+        
+    }
+    #anuncio1 { grid-area: anuncio1; }
+    #anuncio2 { grid-area: anuncio2; }
+    .anuncio {
+        height: 100%;
+    }
+    div#fondo-nav-overlay, div#fondo-nav-overlay.mostrar {
+        display: none;
+    }
+    header {
+        display: grid;
+        grid-template-areas:
+        "blank banner banner"
+        "nav nav nav";
+        height: auto;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 4fr 1fr;
+    }
+    nav {
+        grid-area: nav;
+        align-self: self-end;
+        height: 100%;
+        justify-self: stretch;
+        align-self: stretch;
+    }
+    nav a#boton-hamburguesa {
+        display: none;
+    }
+    nav ul#navbar-ul-menu {
+        display: grid;
+        grid-auto-flow: column;
+    }
+
+    header .banner img:first-child {
+        height: 75%;
+    }
+
+    header .banner img {
+        height: 50%;
+    }
 }

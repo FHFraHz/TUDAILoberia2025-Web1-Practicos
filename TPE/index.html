@@ -8,14 +8,11 @@
     <link rel="shortcut icon" href="img/logo-favicon.svg" type="image/x-icon">
 </head>
 <body>
+    <div id="fondo-nav-overlay"></div>
     <header>
         <div class="banner">
-            
             <img src="img/cabecera-logo.png" alt="CORADOR">
             <img src="img/logo-favicon.svg" alt="Logo CORADOR">
-           
-            <!-- <h1>CORADOR</h1>
-            <h1>C</h1> -->
         </div>
         <nav>
             <a href="#" id="boton-hamburguesa">≡</a>
@@ -29,8 +26,13 @@
             </ul>
         </nav>
     </header>
-    <aside class="anuncio1"></aside>
     <main>
+        <aside id="anuncio1" class="anuncio">
+            <a target="_blank" href="https://www.pexels.com/es-es/foto/37411560/">
+                <img src="img/anuncios/anuncio1.jpg" alt="Foto de Alexander Mass en Pexels">
+                <p class="overlay-anuncio">Anuncio</p>
+            </a>
+        </aside>
         <section id="contenido">
             <h1>Inicio</h1>
             <section id="inicio-instrumentos">
@@ -66,12 +68,16 @@
                 </div>
             </section>
         </section>
+        <aside id="anuncio2" class="anuncio">
+            <a target="_blank" href="https://www.pexels.com/es-es/foto/30743918/">
+                <p class="overlay-anuncio">Anuncio</p>
+                <img src="img/anuncios/anuncio2.jpg" alt="Foto de celal keser en Pexels">
+            </a>
+        </aside>
     </main>
-    <aside class="anuncio2"></aside>
     <footer>
         <p>Copyright © FHFraHz 2026</p>
     </footer>
-    <div id="overlay-oscuro"></div>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

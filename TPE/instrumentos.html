@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Instrumentos | Corador Instrumentos Musicales</title>
 </head>
 <body>
@@ -15,8 +16,8 @@
         <nav>
             <a href="#" id="boton-hamburguesa">≡</a>
             <ul id="navbar-ul-menu" class="">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="instrumentos.html">Instrumentos</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#" id="nav-opcion-cierra-menu">Instrumentos</a></li>
                 <!-- Próximamente -->
                 <!-- <li>Noticias</li>
                 <li>¿Quiénes somos?</li> -->
@@ -24,55 +25,46 @@
             </ul>
         </nav>
     </header>
-    <aside class="anuncio1"></aside>
     <main>
-        <h1>Instrumentos</h1>
-        <section id="inicio-instrumentos">
-            <h3>Los Últimos Instrumentos</h3>
-            <div id="inicio-instrumentos-contenedor">
-                <article class="articulo-instrumento">
-                    <h2>CRASSIO HFR-369</h2>
-                    <img src="img/instrumentos/teclado/crassio-hfr-369.png" alt="CRASSIO HFR-369">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque alias praesentium beatae aperiam reiciendis aspernatur sapiente rerum assumenda iure obcaecati!</p>
-                </article>
-                <article class="articulo-instrumento">
-                    <h2>YAHAHA PZR-295</h2>
-                    <img src="img/instrumentos/teclado/yahaha-pzr-295.png" alt="YAHAHA PZR-295">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque alias praesentium beatae aperiam reiciendis aspernatur sapiente rerum assumenda iure obcaecati!</p>
-                </article>
-                <article class="articulo-instrumento">
-                    <h2>Ronald ZC-6880</h2>
-                    <img src="img/instrumentos/teclado/ronald-zc-6880.png" alt="Ronald ZC-6880">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque alias praesentium beatae aperiam reiciendis aspernatur sapiente rerum assumenda iure obcaecati!</p>
-                </article>
-            </div>
+        <aside id="anuncio1" class="anuncio">
+            <a target="_blank" href="https://www.pexels.com/es-es/foto/37411560/">
+                <img src="img/anuncios/anuncio1.jpg" alt="Foto de Alexander Mass en Pexels">
+                <p class="overlay-anuncio">Anuncio</p>
+            </a>
+        </aside>
+        <section id="contenido">
+            <h1>Instrumentos</h1>
+            <section id="inicio-instrumentos">
+                <h3>Los Últimos Instrumentos</h3>
+                <div id="inicio-instrumentos-contenedor">
+                    <article class="articulo-instrumento">
+                        <h2>CRASSIO HFR-369</h2>
+                        <img src="img/instrumentos/teclado/crassio-hfr-369-01.svg" alt="CRASSIO HFR-369">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque alias praesentium beatae aperiam reiciendis aspernatur sapiente rerum assumenda iure obcaecati!</p>
+                    </article>
+                    <article class="articulo-instrumento">
+                        <h2>YAHAHA PZR-295</h2>
+                        <img src="img/instrumentos/teclado/yahaha-pzr-295.png" alt="YAHAHA PZR-295">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque alias praesentium beatae aperiam reiciendis aspernatur sapiente rerum assumenda iure obcaecati!</p>
+                    </article>
+                    <article class="articulo-instrumento">
+                        <h2>Ronald ZC-6880</h2>
+                        <img src="img/instrumentos/teclado/ronald-zc-6880.png" alt="Ronald ZC-6880">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque alias praesentium beatae aperiam reiciendis aspernatur sapiente rerum assumenda iure obcaecati!</p>
+                    </article>
+                </div>
+            </section>
         </section>
-        <section id="inicio-noticias">
-            <h3>Última noticia</h3>
-            <div id="inicio-noticias-contenedor">
-                <article class="articulo-noticia">
-                    <h2>Abrimos fábrica de instrumentos personalizados</h2>
-                    <img src="img/noticias/2026-05-01/00.webp" alt="Abrimos fábrica de instrumentos personalizados">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eveniet sint a, doloremque numquam odit culpa blanditiis ea placeat obcaecati!</p>
-                </article>
-                <!--
-                <article class="articulo-noticia">
-                    <h2>Ya importamos YAHAHA</h2>
-                    <img src="img/noticias/2026-04-30/00.webp" alt="Ya importamos YAHAHA">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eveniet sint a, doloremque numquam odit culpa blanditiis ea placeat obcaecati!</p>
-                </article>
-                <article class="articulo-noticia">
-                    <h2>Taller de canto</h2>
-                    <img src="img/noticias/2026-04-29/00.webp" alt="Taller de canto">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eveniet sint a, doloremque numquam odit culpa blanditiis ea placeat obcaecati!</p>
-                </article>
-                -->
-            </div>
-        </section>
+        <aside id="anuncio2" class="anuncio">
+            <a target="_blank" href="https://www.pexels.com/es-es/foto/30743918/">
+                <p class="overlay-anuncio">Anuncio</p>
+                <img src="img/anuncios/anuncio2.jpg" alt="Foto de celal keser en Pexels">
+            </a>
+        </aside>
     </main>
-    <aside class="anuncio2"></aside>
     <footer>
         <p>Copyright © FHFraHz 2026</p>
     </footer>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

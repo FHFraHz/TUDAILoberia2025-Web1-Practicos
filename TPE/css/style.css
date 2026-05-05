@@ -127,7 +127,19 @@ main > * {
 
 section#anuncio1 { grid-area: anuncio1; }
 section#anuncio2 { grid-area: anuncio2; }
-section#contenido { grid-area: contenido; }
+section#contenido {
+    grid-area: contenido;
+    padding: 1ch;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1em;
+    grid-auto-rows: min-content;
+}
+
+section#contenido article {
+    background: #fff3;
+    padding: 1ch;
+}
 
 footer {
     height: 3rem;

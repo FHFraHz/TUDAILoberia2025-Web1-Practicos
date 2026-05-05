@@ -7,4 +7,9 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('fondo-nav-overlay').classList.toggle('mostrar');
     });
 
+    document.getElementById('nav-opcion-cierra-menu').addEventListener('click', function() {
+        document.getElementById('navbar-ul-menu').classList.remove('mobile-abierto');
+        document.getElementById('fondo-nav-overlay').classList.remove('mostrar');
+    });
+
 });

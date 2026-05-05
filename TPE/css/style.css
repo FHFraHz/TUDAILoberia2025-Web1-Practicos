@@ -8,35 +8,93 @@ body {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
     /* grid-template-columns: 2fr 1fr; */
+    font-family: 'Liberation Sans', 'Segoe UI', 'Tahoma', 'Verdana', sans-serif;
 }
 
 header {
     position: sticky;
     top: 0;
-    height: 10rem;
+    /* height: 10rem; */
     background: linear-gradient(to bottom, orange, beige);
     display: grid;
-    grid-template-areas: 'banner';
+    grid-template-areas:
+        "nav-hamburguesa banner";
+    grid-template-columns: 1fr 3fr;
+    width: 100%;
+    z-index: 3;
 }
 
 header .banner {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
     grid-area: banner;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+}
+
+header .banner img {
+    height: 50%;
 }
 
 nav {
-    
+    grid-area: nav-hamburguesa;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    /* grid-area: 1/1; */
 }
 
-header h1 {
-    flex-grow: 1;
-    text-align: center;
+nav a#boton-hamburguesa {
+    background: white;
     font-size: 48px;
+    padding: 0 0.5ch;
+    border-radius: 0.5ch;
+    border: outset #fff 4px;
+    text-decoration: none;
+    align-content: center;
+    text-align: center;
+}
+nav a#boton-hamburguesa:active {
+    border: inset #fff 3px;
+}
+
+nav ul#navbar-ul-menu {
+    z-index: 2;
+    display: none;
+    position: absolute;
+    grid-area: 1/1;
+    width: 100%;
+    background: white;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    list-style-position: inside;
+}
+nav ul#navbar-ul-menu {
+    padding: 0;
+    margin: 0;
+}
+nav ul#navbar-ul-menu.abierto {
+    display: grid;
+    top: 100%;
+}
+nav ul#navbar-ul-menu li {
+    display: flex;
+    flex-direction: row;
+}
+nav ul#navbar-ul-menu li a {
+    box-sizing: border-box;
+    padding: 1ch;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+}
+nav ul#navbar-ul-menu li a:hover {
+    background: #1112;
 }
 
 main {
@@ -67,4 +125,20 @@ article.articulo-instrumento {
 article.articulo-instrumento img {
     width: 100%;
     height: auto;
+}
+
+div#overlay-oscuro {
+    display: none;
+}
+
+div#overlay-oscuro.mostrar {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #1117;
+    z-index: 1;
 }

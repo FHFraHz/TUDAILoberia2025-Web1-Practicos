@@ -23,7 +23,6 @@ let captchas = [
     }
 ];
 let captchaActivo = null;
-let captchaResuelto = false;
 
 function cargarCaptchaAleatorio() {
     captchaActivo = captchas[

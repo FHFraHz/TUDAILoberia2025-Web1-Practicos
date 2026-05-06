@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contacto.css">
     <title>Contacto | Corador Instrumentos Musicales</title>
 </head>
 <body>
@@ -34,6 +35,24 @@
         </aside>
         <section id="contenido">
             <h1>Contacto</h1>
+            <div id="captcha-contacto">
+                <h2>Escriba el captcha:</h2>
+                <img id="imagen-captcha" src="img/captchas/Loading_icon.gif" alt="Captcha">
+                <input type="text" maxlength="5" id="input-captcha"/>
+                <button type="button" id="boton-captcha">Enviar</button>
+            </div>
+            <div id="contenedor-contacto">
+                <h2>Escriba sus datos:</h2>
+                <form action="" id="form-contacto">     
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="form-contacto-nombre">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="form-contacto-apellido">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="form-contacto-email">
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
         </section>
         <aside id="anuncio2" class="anuncio">
             <a target="_blank" href="https://www.pexels.com/es-es/foto/30743918/">
@@ -46,5 +65,6 @@
         <p>Copyright © FHFraHz 2026</p>
     </footer>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/contacto.js"></script>
 </body>
 </html>

@@ -8,8 +8,28 @@ por orden de interpretación de estilos. */
 }
 */
 
+body {
+    font-family: 'Liberation Sans', 'Verdana', sans-serif;
+    background: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background: darkslateblue;
+    color: whitesmoke;
+    margin: 0;
+    padding: 1em;
+}
+
 article.noticia-completa {
     display: grid;
+}
+
+p.parrafo-destacado {
+    color: green;
+    text-decoration: dotted;
+    font-style: oblique;
 }
 
 .texto-sin-estilos {
@@ -32,4 +52,34 @@ img.img-noticia {
     /* height: auto; */
     object-fit: contain;
     object-position: center;
+}
+
+footer {
+    background: darkslateblue;
+    color: whitesmoke;
+    padding: 1em;
+}
+footer h4 {
+    margin: 0;
+}
+
+ul {
+    font-style: italic;
+}
+ol {
+    text-decoration: underline;
+}
+
+.estilo-serif {
+
+}
+
+.cita-textual-destacada {
+    font-size: 24px;
+    margin: 1ch 10%;
+}
+
+span.comilla-grande {
+    font-size: 36px;
+    box-sizing: content-box;
 }

@@ -1,0 +1,35 @@
+/* esto le quita el margen y relleno por defecto a todos los elementos
+antes de que cualquiera de ellos se sobreescriba especificando lo contrario 
+por orden de interpretación de estilos. */
+/*
+* {
+    margin: 0;
+    padding: 0;
+}
+*/
+
+article.noticia-completa {
+    display: grid;
+}
+
+.texto-sin-estilos {
+    color: inherit;
+    text-decoration: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+aside.aside-img {
+    text-align: center;
+}
+aside.aside-img, a.img-noticia-link {
+    justify-self: center;;
+}
+img.img-noticia {
+    max-width: 480px;
+    max-height: 480px;
+    /* width: 80%; */
+    /* height: auto; */
+    object-fit: contain;
+    object-position: center;
+}

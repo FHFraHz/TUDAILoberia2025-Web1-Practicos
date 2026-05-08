@@ -142,3 +142,17 @@ nav ul.ul-nav li {
     padding: 1ch;
     display: inline-block;
 }
+
+section.left {
+    float: left;
+    text-align: left;
+    background: lightcoral;
+}
+section.right {
+    float: right;
+    text-align: right;
+    background: lightgoldenrodyellow;
+}
+section.left, section.right {
+    width: 50%;
+}

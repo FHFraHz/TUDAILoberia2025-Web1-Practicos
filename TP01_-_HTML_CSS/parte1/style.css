@@ -22,10 +22,6 @@ h1 {
     padding: 1em;
 }
 
-article.noticia-completa {
-    display: grid;
-}
-
 p.parrafo-destacado {
     color: green;
     text-decoration: dotted;
@@ -46,10 +42,8 @@ aside.aside-img, a.img-noticia-link {
     justify-self: center;;
 }
 img.img-noticia {
-    max-width: 480px;
+    width: 100%;
     max-height: 480px;
-    /* width: 80%; */
-    /* height: auto; */
     object-fit: contain;
     object-position: center;
 }
@@ -71,7 +65,11 @@ ol {
 }
 
 .estilo-serif {
+    font-family: serif;
+}
 
+.texto-alinear-centro {
+    text-align: center;
 }
 
 .cita-textual-destacada {
@@ -82,4 +80,11 @@ ol {
 span.comilla-grande {
     font-size: 36px;
     box-sizing: content-box;
+}
+
+.volver {
+    margin: 0;
+    padding: 4px;
+    background: slateblue;
+    color: whitesmoke;
 }

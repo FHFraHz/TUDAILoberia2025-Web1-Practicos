@@ -1,0 +1,83 @@
+#ruleta {
+    display: grid;
+    justify-items: center;
+}
+#imagen-ruleta {
+    width: 80%;
+    max-width: 360px;
+    height: auto;
+    object-fit: contain;
+    animation: none;
+    animation-play-state: initial;
+}
+
+#imagen-ruleta.girando-ruleta {
+    animation: girarRuleta 0.75s linear;
+    animation-iteration-count: 1;
+}
+
+#form-ruleta {
+    display: grid;
+    grid-template-areas:
+        "form-ruleta-col-izq form-ruleta-col-der"
+        "boton-girar-ruleta boton-girar-ruleta";
+    justify-items: center;
+    align-items: start;
+    row-gap: 2ch;
+    column-gap: 4ch;
+    /* ^ esto también se puede hacer así: */
+    /* gap: 2ch 4ch; */
+    /* donde el primer valor corresponde a row-gap y el segundo a column-gap */
+
+    max-width: 480px;
+    width: 80%;
+    /* grid-template-columns: 1fr 1fr; */
+}
+
+#form-ruleta-col-izq {
+    grid-area: form-ruleta-col-izq;
+    justify-self: end;
+    text-align: end;
+}
+#form-ruleta-col-der {
+    grid-area: form-ruleta-col-der;
+    justify-self: start;
+}
+.form-ruleta-col {
+    display: grid;
+    grid-auto-flow: row;
+    /* width: 100%; */
+}
+.form-ruleta-col div {
+    display: grid;
+    grid-auto-flow: row;
+}
+#form-ruleta-submit {
+    grid-area: boton-girar-ruleta;
+}
+#ruleta-form-numero,
+.option-ruleta-numero,
+#ruleta-form-color, 
+#ruleta-form-color option {
+    color: whitesmoke;
+}
+select.rojo, option.rojo { background: firebrick; }
+select.negro, option.negro { background: #333; }
+select.verde, option.verde { background: green; }
+
+#ruleta-resultado { text-align: center }
+#heading-resultado { font-size: 48px; }
+#ruleta-resultado * { margin: 2pt; }
+#ruleta-resultado *.rojo { color: firebrick; }
+#ruleta-resultado *.negro { color: #333; }
+#ruleta-resultado *.verde { color: green; }
+
+/* ANIMACIONES 👀 */
+@keyframes girarRuleta {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

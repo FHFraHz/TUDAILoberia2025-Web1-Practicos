@@ -314,6 +314,7 @@ function agregarEventListenersABotones() {
 
 document.getElementById('btn-cambiarEstiloDiv').addEventListener('click', function() {
     // Método 1: usando hsl
+    // document.getElementById('divACambiarEstilo').style.background = 'rgb('+Math.floor(Math.random()*255)+', +'+Math.floor(Math.random()*255)+', '+Math.floor(Math.random()*255)+')';
     document.getElementById('divACambiarEstilo').style.background = 'hsl('+Math.floor(Math.random()*255)+', 80%, 37.5%)';
     // Método 2: usando un color estático
     // document.getElementById('divACambiarEstilo').style.background = 'cyan';

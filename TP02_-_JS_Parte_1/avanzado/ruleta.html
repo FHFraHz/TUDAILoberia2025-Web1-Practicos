@@ -5,13 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/utils.css">
+    <link rel="stylesheet" href="../css/avanzado/ruleta.css">
     <title>Avanzado: Ruleta | UNICEN Web 1: TP 2 Javascript Parte 1</title>
 </head>
 <body>
     <header>
-        <h4><a href="../avanzado.html" class="text-center"><< Volver (Avanzado)</a>&nbsp;|&nbsp;<a href="../" class="text-center"><< Volver (Inicio)</a></h4>
+        <nav>
+            <a href="../">Volver a Inicio</a>
+            &nbsp;|&nbsp;
+            <a href="../basico.html">Básico</a>
+            &nbsp;|&nbsp;
+            <a href="../intermedio.html">Intermedio</a>
+            &nbsp;|&nbsp;
+            <a href="../avanzado.html">« Volver a Avanzado</a>
+        </nav>
     </header>
     <main>
+        <div id="ruleta">
+            <h1>Ruleta</h1>
+            <img src="../img/roulette-svgrepo-com-edit.svg" id="imagen-ruleta">
+            <form id="form-ruleta">
+                <div id="form-ruleta-col-izq" class="form-ruleta-col">
+                    <label for="modo-apuesta">Apostar por:</label>
+                    <label>
+                        Número
+                        <input type="radio" name="modo-apuesta" id="modo-apuesta-radio-numero" value="numero" checked="on"/>
+                    </label>
+                    <label>
+                        Color
+                        <input type="radio" name="modo-apuesta" id="modo-apuesta-radio-color" value="color"/>
+                    </label>
+                </div>
+                <div id="form-ruleta-col-der" class="form-ruleta-col">
+                    <div>
+                        <label for="numero">Número</label>
+                        <!--
+                        <input type="number" name="numero" id="ruleta-form-numero" min="0" max="36" step="1" disabled>
+                        -->
+                        <select name="numero" id="ruleta-form-numero">
+                            <option class="option-ruleta-numero" selected value="0">0</option>
+                            <option class="option-ruleta-numero" value="1">1</option>
+                            <option class="option-ruleta-numero" value="2">2</option>
+                            <option class="option-ruleta-numero" value="3">3</option>
+                            <option class="option-ruleta-numero" value="4">4</option>
+                            <option class="option-ruleta-numero" value="5">5</option>
+                            <option class="option-ruleta-numero" value="6">6</option>
+                            <option class="option-ruleta-numero" value="7">7</option>
+                            <option class="option-ruleta-numero" value="8">8</option>
+                            <option class="option-ruleta-numero" value="9">9</option>
+                            <option class="option-ruleta-numero" value="10">10</option>
+                            <option class="option-ruleta-numero" value="11">11</option>
+                            <option class="option-ruleta-numero" value="12">12</option>
+                            <option class="option-ruleta-numero" value="13">13</option>
+                            <option class="option-ruleta-numero" value="14">14</option>
+                            <option class="option-ruleta-numero" value="15">15</option>
+                            <option class="option-ruleta-numero" value="16">16</option>
+                            <option class="option-ruleta-numero" value="17">17</option>
+                            <option class="option-ruleta-numero" value="18">18</option>
+                            <option class="option-ruleta-numero" value="19">19</option>
+                            <option class="option-ruleta-numero" value="20">20</option>
+                            <option class="option-ruleta-numero" value="21">21</option>
+                            <option class="option-ruleta-numero" value="22">22</option>
+                            <option class="option-ruleta-numero" value="23">23</option>
+                            <option class="option-ruleta-numero" value="24">24</option>
+                            <option class="option-ruleta-numero" value="25">25</option>
+                            <option class="option-ruleta-numero" value="26">26</option>
+                            <option class="option-ruleta-numero" value="27">27</option>
+                            <option class="option-ruleta-numero" value="28">28</option>
+                            <option class="option-ruleta-numero" value="29">29</option>
+                            <option class="option-ruleta-numero" value="30">30</option>
+                            <option class="option-ruleta-numero" value="31">31</option>
+                            <option class="option-ruleta-numero" value="32">32</option>
+                            <option class="option-ruleta-numero" value="33">33</option>
+                            <option class="option-ruleta-numero" value="34">34</option>
+                            <option class="option-ruleta-numero" value="35">35</option>
+                            <option class="option-ruleta-numero" value="36">36</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="color">Color</label>
+                        <select name="color" id="ruleta-form-color" disabled>
+                            <option value="rojo" class="rojo" selected>Rojo</option>
+                            <option value="negro" class="negro">Negro</option>
+                        </select>
+                    </div>
+                </div>
+                <input type="submit" value="Girar la ruleta" id="form-ruleta-submit"/>
+            </form>
+        </div>
+        <div id="ruleta-resultado">
+            <h2>Resultado:</h2>
+            <h2 id="heading-resultado"></h2>
+            <h4 id="heading-resultado-color"></h4>
+        </div>
     </main>
     <footer>
         <p class="text-center">© FHFraHz 2026</p>

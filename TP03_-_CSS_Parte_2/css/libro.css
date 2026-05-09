@@ -1,0 +1,34 @@
+/* * {
+} */
+main {
+    display: block;
+}
+.tabla-de-contenidos, .contenido {
+    display: inline-block;
+    padding: 1em;
+    box-sizing: border-box;
+}
+.tabla-de-contenidos {
+    width: 20%;
+}
+.contenido {
+    float: right;
+    width: 80%;
+}
+.contenido p:first-of-type::first-letter {
+    font-size: 300%;
+}
+.contenido p {
+    /* margin-inline-start: 4em; */
+    text-indent: 4ch;
+    text-align: justify;
+}
+h1 {
+    font-style: italic;
+    font-size: 180%;
+}
+h2 { font-size: 160%; }
+h3 { font-size: 140%; }
+h4 { font-size: 120%; }
+h5 { font-size: 110%; }
+h6 { font-size: 105%; }

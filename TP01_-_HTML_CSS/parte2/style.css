@@ -29,8 +29,35 @@ h1 {
     padding: 1em;
 }
 
-header, main.content, footer {
+header, main, footer {
     display: block;
+}
+
+.contenido {
+    display: inline-block;
+    /* float: left; */
+    max-width: 80%;
+    padding-bottom: 4em;
+}
+.anuncios {
+    float: right;
+    max-width: 20%;
+}
+.anuncios a {
+    width: 100%;
+    height: max-content;
+    text-decoration: inherit;
+    color: inherit
+}
+.anuncios a h6 {
+    margin: 0;
+    padding: 2px;
+    background: dodgerblue;
+    color: whitesmoke;
+}
+.anuncios a img {
+    width: 100%;
+    height: auto;
 }
 
 header {
@@ -44,7 +71,6 @@ header {
 
 main {
     top: 8em;
-    MARGIN-bottom: 4em;
     /* min-height: 78vh; */
 }
 

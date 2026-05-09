@@ -1,0 +1,16 @@
+.francia {
+    background: linear-gradient(to right, #22d 0%, #22d 33.3333333332%, #eee 33.3333333333%, #eee 66.6666666665%, #d22 66.6666666666%);
+    width: 240px;
+    height: 160px;
+}
+
+.texto-insertado-con-css::before {
+    content: 'Este texto está insertado desde CSS... con ::before';
+    color: green;
+}
+.texto-insertado-con-css::after {
+    content: 'Este texto está insertado desde CSS... con ::after';
+    color: firebrick;
+}
+/* Esto es para que haga un "salto de línea" después de cada pseudo elemento */
+.texto-insertado-con-css::before, .texto-insertado-con-css::after { display: block; }

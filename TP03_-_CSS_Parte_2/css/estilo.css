@@ -1,6 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body, html {
+    box-sizing: border-box;
+    font-family: 'Noto Sans', 'Liberation Serif', 'Franklin', 'Segoe UI', 'Tahoma', 'Verdana', sans-serif;
+}
+
 p code {
     background: #ddd;
 }
 hr {
     margin: 2ch 0;
+}
+
+nav {
+
+    
+    ul {
+        background: linear-gradient(to bottom, whitesmoke, lightslategray);
+        list-style: none;
+        padding: 0;
+        
+        li {
+            
+            background: transparent;
+            display: inline-block;
+            
+            a {
+                text-decoration: underline;
+                display: inline-block;
+                padding: 1ch;
+            }
+            
+            a.pagina-actual {
+                /* box-sizing: border-box; */
+                outline: 2px #fff7 inset;
+                font-weight: bold;
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+
+    }    
 }

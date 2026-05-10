@@ -1,0 +1,35 @@
+.codigo-css {
+    .puntuacion {
+        color: blueviolet;
+    }
+}
+
+.codigo-html {
+    .etiqueta {
+        color: crimson;
+    }
+    .atributo.nombre {
+        color: dodgerblue;
+        font-style: italic;
+        font-weight: bold;
+    }
+    .atributo.valor {
+        color: green;
+    }
+}
+
+table.ejercicio-10 {
+    border-collapse: collapse;
+    margin: 1em 0;
+    width: 100%;
+    td, th {
+        border: 1px solid #111;
+        padding: 1ch;
+        width: 33%;
+    }
+}
+
+div.contenedor-tablas {
+    max-width: 720px;
+    margin: 0 auto;
+}

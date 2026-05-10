@@ -1,0 +1,22 @@
+table#ejercicio-10a {
+
+    p { color: blue;}
+    .destacada { color:green;}
+    p.destacada { color:red;}
+
+}
+
+table#ejercicio-10b {
+
+    .titular { color: red;}
+    .verde {color: green}
+
+}
+
+table#ejercicio-10c {
+
+    h1.titular { color: red;}
+    .verde {color: green}
+    h1 { color: blue !important;}
+
+}

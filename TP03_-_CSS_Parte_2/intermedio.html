@@ -5,9 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/intermedio.css">
+    <link rel="stylesheet" href="css/tabla-demo.css">
     <title>Intermedio | TP3: CSS Parte 2</title>
 </head>
 <body>
-    
+    <header>
+        <a href="/"><h1>TP3: CSS Parte 2</h1></a>
+        <nav>
+            <ul>
+                <li><a href="/basico.html">Básico</a></li>
+                <li><a class="pagina-actual" href="/intermedio.html">Intermedio</a></li>
+                <li><a href="/avanzado.html">Avanzado</a></li>
+                <li><a href="/libro/">Libro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Intermedio</h1>
+
+    <!-- ¡ATENCIÓN! -->
+    <!-- Código HTML para propósitos puramente ilustrativos -->
+    <!-- Mirar columnas "resultado" de estas tablas -->
+    <!-- Y el archivo intermedio.css -->
+    <p>10.	En cada ejemplo, explique por cuál de los conceptos de cascada (importancia, especificidad y orden) se resuelve cada una de las colisiones:</p>
+
+    <div class="contenedor-tablas">
+        <p>a)</p>
+        <table class="ejercicio-10" id="ejercicio-10a">
+            <tbody>
+                <tr>
+                    <td>
+                        <code class="codigo-css">
+                            p <span class="puntuacion">{</span> color<span class="puntuacion">:</span> blue <span class="puntuacion">;}</span>
+                            <br/>
+                            <span class="puntuacion">.</span>destacada <span class="puntuacion">{</span> color<span class="puntuacion">:</span>green<span class="puntuacion">;}</span>
+                            <br/>
+                            p<span class="puntuacion">.</span>destacada <span class="puntuacion">{</span> color<span class="puntuacion">:</span>red<span class="puntuacion">;}</span>
+                        </code>
+                    </td>
+                    <td>
+                        <code class="codigo-html">
+                            <<span class="etiqueta">p</span>
+                            <span class="atributo nombre">class</span>=<span class="atributo valor string">'destacada'</span>
+                            <span class="atributo nombre">id</span>=<span class="atributo valor string">'unico'</span>>
+                            <br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="contenido">Este es un párrafo</span>
+                            <br/>
+                            <<span>/</span><span class="etiqueta">p</span>>
+                        </code>
+                    </td>
+                    <td>
+                        <p class='destacada' id='unico'> Este es un párrafo</p>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>CSS</th>
+                    <th>HTML</th>
+                    <th>Resultado</th>
+                </tr>
+            </tfoot>
+        </table>
+
+        <p>b)</p>
+        <table class="ejercicio-10" id="ejercicio-10b">
+            <tbody>
+                <tr>
+                    <td>
+                        <code class="codigo-css">
+                            <span class="puntuacion">.</span>titular <span class="puntuacion">{</span> color<span class="puntuacion">:</span> red<span class="puntuacion">;}</span>
+                            <br/>
+                            <span class="puntuacion">.</span>verde <span class="puntuacion">{</span>color<span class="puntuacion">:</span> green<span class="puntuacion">;}</span>
+                        </code>
+                    </td>
+                    <td>
+                        <code class="codigo-html">
+                            <<span class="etiqueta">h1</span> <span class="atributo nombre">class</span>=<span class="atributo valor">"titular verde"</span>>
+                            <br/>&nbsp;&nbsp;&nbsp;&nbsp;Nuevo título
+                            <br/><<span>/</span><span class="etiqueta">h1</span>>
+                        </code>
+                    </td>
+                    <td>
+                        <h1 class="titular verde">Nuevo título</h2>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <th>CSS</th>
+                <th>HTML</th>
+                <th>Resultado</th>
+            </tfoot>
+        </table>
+
+        <p>c)</p>
+        <table class="ejercicio-10" id="ejercicio-10c">
+            <tbody>
+                <tr>
+                    <td>
+                        <code class="codigo-css">
+                            h1<span class="puntuacion">.</span>titular <span class="puntuacion">{</span> color<span class="puntuacion">:</span> red<span class="puntuacion">;}</span>
+                            <br/>
+                            <span class="puntuacion">.</span>verde <span class="puntuacion">{</span>color<span class="puntuacion">:</span> green<span class="puntuacion">;}</span>
+                            <br/>
+                            h1 <span class="puntuacion">{</span>color<span class="puntuacion">:</span> blue<span class="puntuacion"> !important;}</span>
+                        </code>
+                    </td>
+                    <td>
+                        <code class="codigo-html">
+                            <<span class="etiqueta">h1</span> <span class="atributo nombre">class</span>=<span class="atributo valor">"titular verde"</span>>
+                            <br/>&nbsp;&nbsp;&nbsp;&nbsp;Nuevo título
+                            <br/><<span>/</span><span class="etiqueta">h1</span>>
+                        </code>
+                    </td>
+                    <td>
+                        <h1 class="titular verde">Nuevo título</h2>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <th>CSS</th>
+                <th>HTML</th>
+                <th>Resultado</th>
+            </tfoot>
+        </table>
+    </div>
 </body>
 </html>

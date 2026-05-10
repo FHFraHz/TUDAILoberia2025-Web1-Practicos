@@ -36,3 +36,11 @@ h6 { font-size: 105%; }
 main {
     font-family: serif;
 }
+
+.dialogo::before {
+    content: "\2014";
+}
+.dialogo.personaje-1::before { color: crimson; }
+.dialogo.personaje-2::before { color: green; }
+.dialogo.personaje-3::before { color: blue; }
+.dialogo.personaje-4::before { color: blueviolet; }

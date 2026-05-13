@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', 'Liberation Sans', Calibri, 'Trebuchet MS', sans-serif;
+    background: whitesmoke;
+}
+
+h1.banner-heading {
+    padding: 1ch;
+    background: gold;
+}
+
+nav ul {
+    display: none;
+}
+
+nav ul li {
+    display: inline-block;
+    border: 1px solid #7777;
+}
+nav ul li a {
+    padding: 1em;
+}
+
+@media (min-width: 960px) {
+    nav ul {
+        display: grid;
+        grid-auto-flow: column;
+    }
+}

@@ -20,3 +20,10 @@
 #contenedor-contacto {
     display: none;
 }
+
+input {
+    width: 100%;
+}
+
+input:only-of-type("submit") {
+}

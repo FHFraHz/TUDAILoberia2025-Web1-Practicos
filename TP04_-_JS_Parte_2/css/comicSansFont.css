@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Comic Sans MS';
+    src: url('../ttf/comic.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Comic Sans MS';
+    src: url('../ttf/comicbd.ttf');
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Comic Sans MS';
+    src: url('../ttf/comici.ttf');
+    font-style: italic;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Comic Sans MS';
+    src: url('../ttf/comicz.ttf');
+    font-style: italic;
+    font-weight: bold;
+}

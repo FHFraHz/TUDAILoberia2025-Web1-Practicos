@@ -9,6 +9,11 @@ body {
     background: whitesmoke;
 }
 
+input, button {
+    padding: 0.37ch;
+    font-size: 90%;
+}
+
 h1.banner-heading {
     padding: 1ch;
     background: gold;

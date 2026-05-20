@@ -1,0 +1,15 @@
+#miBotonColor1 { background: firebrick; color: whitesmoke; }
+#miBotonColor2 { background: lime; }
+#miBotonColor3 { background: dodgerblue; color: whitesmoke; }
+
+h1.claseToggleHeadings,
+h2.claseToggleHeadings,
+h3.claseToggleHeadings,
+h4.claseToggleHeadings,
+h5.claseToggleHeadings,
+h6.claseToggleHeadings {
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+    background: hsl(345deg, 90%, 60%);
+    color: whitesmoke;
+}

@@ -33,23 +33,21 @@ function toggleClaseHeadings() {
     let misH5 = document.getElementsByTagName('h5');
     let misH6 = document.getElementsByTagName('h6');
 
-    Array.from(misH1).forEach((miH1) => { miH1.classList.toggle('claseToggleHeadings')});
-    Array.from(misH2).forEach((miH2) => { miH2.classList.toggle('claseToggleHeadings')});
-    Array.from(misH3).forEach((miH3) => { miH3.classList.toggle('claseToggleHeadings')});
-    Array.from(misH4).forEach((miH4) => { miH4.classList.toggle('claseToggleHeadings')});
-    Array.from(misH5).forEach((miH5) => { miH5.classList.toggle('claseToggleHeadings')});
-    Array.from(misH6).forEach((miH6) => { miH6.classList.toggle('claseToggleHeadings')});
+    Array.prototype.forEach.call(misH1, (miH1) => { miH1.classList.toggle('claseToggleHeadings')});
+    Array.prototype.forEach.call(misH2, (miH2) => { miH2.classList.toggle('claseToggleHeadings')});
+    Array.prototype.forEach.call(misH3, (miH3) => { miH3.classList.toggle('claseToggleHeadings')});
+    Array.prototype.forEach.call(misH4, (miH4) => { miH4.classList.toggle('claseToggleHeadings')});
+    Array.prototype.forEach.call(misH5, (miH5) => { miH5.classList.toggle('claseToggleHeadings')});
+    Array.prototype.forEach.call(misH6, (miH6) => { miH6.classList.toggle('claseToggleHeadings')});
 }
 
 function agregarEventListeners() {
     document.getElementById('miBoton').addEventListener('click', saludarHolaMundo);
-    document.getElementById('miBoton').addEventListener('click', (event) => { registrarIDdeUltimoBoton(event) });
-    document.getElementById('miBotonColor1').addEventListener('click', (event) => { registrarIDdeUltimoBoton(event) });
-    document.getElementById('miBotonColor2').addEventListener('click', (event) => { registrarIDdeUltimoBoton(event) });
-    document.getElementById('miBotonColor3').addEventListener('click', (event) => { registrarIDdeUltimoBoton(event) });
-    document.getElementById('botonToggleHeadings').addEventListener('click', (event) => {
-        registrarIDdeUltimoBoton(event);
-        toggleClaseHeadings();
+    document.getElementById('botonToggleHeadings').addEventListener('click', toggleClaseHeadings);
+
+    let todosLosBotones = document.getElementsByTagName('button');
+    Array.prototype.forEach.call(todosLosBotones, (miBoton) => {
+        miBoton.addEventListener('click', registrarIDdeUltimoBoton);
     });
 }
 
